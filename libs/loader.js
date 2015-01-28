@@ -69,7 +69,7 @@ var readDir = function (routerPath, modelPath, app) {
     if (app.get('env') === 'development') {
         app.use(function (err, req, res, next) {
             res.status(err.status || 500);
-            res.render('error', {
+            res.render('errors/error', {
                 message: err.message,
                 error: err
             });
@@ -80,7 +80,7 @@ var readDir = function (routerPath, modelPath, app) {
 // no stacktraces leaked to user
     app.use(function (err, req, res, next) {
         res.status(err.status || 500);
-        res.render('error', {
+        res.render('errors/error', {
             message: err.message,
             error: {}
         });

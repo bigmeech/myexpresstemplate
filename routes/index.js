@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/usage/policy', function(req, res){
-  res.render('policy');
+  res.render('pages/policy');
 })
 
 module.exports = router;
