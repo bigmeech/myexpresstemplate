@@ -48,7 +48,6 @@ function showUsers(req, res) {
 
 function deleteUsers(req, res) {
     //get input from client
-
 }
 
 /*
